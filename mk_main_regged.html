@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moodle Killer 2.0</title>
+
+  <link rel="shortcut icon" href="images/light_icon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="moodlekiller.css" >
+  <link rel="stylesheet" type="text/css" href="font-awesome.min.css" >
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  <style>
+
+    body{
+      width: 100%;
+    }
+    a{
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+      text-decoration-color: #0a53be;
+    }
+    table, tr, td{
+      border: none;
+    }
+    .custom-toggler .navbar-toggler-icon {
+      background-image: url("images/ava.png");
+      border-radius: 50px;
+    }
+    .custom-toggler.navbar-toggler {
+      border: none;
+    }
+    .dropdown-menu {
+      min-width: 50px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    @media only screen and (max-width: 1200px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+    fieldset{
+      border: 1px solid pink;
+      width: 98%;
+      margin:auto;
+    }
+  legend{
+  width:inherit;
+  padding:0 10px;
+  border-bottom:none;
+  float: none;
+  margin-bottom: -10px;
+  font-size: 16px;
+  border-right: 5px;
+  }
+  </style>
+
+</head>
+
+<body>
+
+<!--HEADER ILI SHAPKA-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+
+  <div class="container-fluid">
+
+    <a class="navbar-item text-dark mx-4" href="mk_grades.html">
+      Courses
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon custom-toggler"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active text-dark d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block" aria-current="page" href="#">
+            Moodle Killer Project
+          </a>
+        </li>
+
+        <li class="nav-item dropdown mx-4">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="my-auto">Theme</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end text-center"  aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item active bg-primary" href="#">Light</a></li>
+            <li><a class="dropdown-item" href="#">Dark</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="d-flex">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown mx-0">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="my-auto link-primary">Zaur Berdibekov</span>
+              <img class="my-0 mx-1 rounded-circle" width="25px" height="25px" src="images/ava.png">
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end text-center"  aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider" href="#"></li>
+              <li><a class="dropdown-item" href="mk_main_notregged.html">Log out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<br>
+<br>
+<br>
+
+<!--SUBJECTS-->
+<fieldset class="border border-secondary p-3 mx-auto my-auto px-auto py-auto">
+  <legend class="float-none w-auto ">
+    2nd trimester cources
+  </legend>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-4 d-flex justify-content-center my-2 px-auto py-auto ">
+        <button type="button" class="btn btn-outline-secondary w-75">Foreign Language 2 (English)<br> Assel Salkenova</button>
+    </div>
+
+    <div class="col-lg-4 d-flex justify-content-center my-2 px-auto py-auto ">
+      <button type="button" class="btn btn-outline-secondary w-75">WEB Technologies 1 (Front End) <br> Yegemberdiyeva Gulzhan</button>
+    </div>
+
+    <div class="col-lg-4 d-flex justify-content-center my-2 px-auto py-auto ">
+      <button type="button" class="btn btn-outline-secondary w-75">Object-Oriented Programming (Java) <br> Aimukhambetov Olzhas</button>
+    </div>
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-lg-4 d-flex justify-content-center my-2 px-auto py-auto ">
+      <button type="button" class="btn btn-outline-secondary w-75">Discrete Mathematics <br> Zhalgas Aidana</button>
+    </div>
+
+    <div class="col-lg-4 d-flex justify-content-center my-2 px-auto py-auto ">
+      <button type="button" class="btn btn-outline-secondary w-75">Modern History of Kazakhstan <br> Mamytova Saule</button>
+    </div>
+
+    <div class="col-lg-4 d-flex justify-content-center my-2 px-auto py-auto ">
+      <button type="button" class="btn btn-outline-secondary w-75">Physical Culture <br> Askapov Sarzhan</button>
+    </div>
+  </div>
+
+</fieldset>
+
+<!--MAIN BLOCK: NEWS, DEADLINES, HOT LINKS-->
+<fieldset class="row border border-secondary d-flex justify-content-center mx-auto my-4">
+
+  <div class="col-9 ">
+    <fieldset class="col-12 border border-secondary">
+      <legend  class="float-none w-auto mx-1 ">
+        News
+      </legend>
+      <p>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis velit non dolor maximus pellentesque at vel nibh. Sed maximus magna a risus interdum, vitae euismod nulla tempus. Suspendisse blandit faucibus tortor, sit amet fringilla dolor efficitur sed. Cras mi libero, malesuada in pellentesque et, aliquam nec leo. Nunc hendrerit dictum magna sed dictum. Mauris eget interdum nibh, ac tincidunt ante. Integer facilisis turpis cursus, iaculis urna id, consequat nibh. Proin rutrum mi a ante mattis posuere. Curabitur dictum enim non ligula iaculis, ac tincidunt odio venenatis. Duis dui mauris, lobortis quis finibus vel, luctus nec augue.
+
+        Fusce nec leo ut urna tincidunt vestibulum vestibulum nec justo. Nam tempus sed mi id pulvinar. Vestibulum ut libero pellentesque, sagittis odio elementum, auctor nibh. Sed vitae turpis accumsan, efficitur ante quis, cursus mauris. Fusce volutpat quam lorem, a ultrices arcu porttitor a. Vivamus iaculis vehicula vehicula. In dictum euismod tellus, at porttitor justo malesuada pellentesque. Nullam consectetur urna vitae congue egestas. Pellentesque sapien metus, hendrerit sit amet laoreet in, condimentum vitae urna. Nulla eu mi quis urna aliquet ullamcorper. Ut egestas pretium ornare.
+
+        Nulla vel enim ultrices, convallis tortor id, ultricies ante. Aliquam ullamcorper consectetur magna, vitae lacinia risus ornare in. Morbi molestie eros eu aliquam posuere. Sed maximus ligula luctus massa imperdiet tempus. Maecenas ornare auctor odio at laoreet. Proin non ex nibh. Pellentesque feugiat rhoncus nibh sit amet finibus. Pellentesque a lorem ac nunc maximus luctus a ut eros. Praesent laoreet condimentum ante sit amet vehicula. Nulla laoreet consectetur arcu, et vestibulum eros dignissim a. In et eros sed lacus faucibus mattis vel id justo. Nulla facilisi. Vestibulum vitae nisl nisl.
+
+        Nulla in velit quis purus placerat posuere vel quis lorem. Mauris et diam nec urna imperdiet malesuada eu et turpis. Suspendisse porta lacus quis ipsum tempor, in malesuada erat feugiat. Nunc semper sapien ut nulla laoreet, eget gravida nisl rutrum. Aliquam at ligula ipsum. Sed odio arcu, suscipit et luctus sit amet, feugiat a justo. Aenean pulvinar est ut tellus interdum, ut maximus elit maximus. Nam porttitor dolor nec porttitor aliquet. Etiam pharetra mi et turpis dapibus efficitur. Suspendisse finibus pretium erat vitae dapibus.
+
+        In nec euismod orci. Duis felis felis, faucibus non ex eu, laoreet fermentum nunc. Nunc massa dui, aliquet ac cursus vulputate, semper at dolor. Quisque molestie arcu quam, feugiat ullamcorper erat imperdiet ut. Aenean velit turpis, iaculis eu dolor ac, eleifend varius massa. Aenean et vehicula ante, ac accumsan felis. Nunc interdum lorem a turpis iaculis luctus. Pellentesque pharetra nisi venenatis, blandit arcu id, tempor nisi. Aenean tristique risus ut diam tempor ultricies. Cras sodales ipsum sit amet fermentum pulvinar. Vivamus eu rhoncus orci. Phasellus dignissim scelerisque sodales. Nam interdum pulvinar arcu quis rutrum. Fusce bibendum tincidunt mi, volutpat viverra ante laoreet sed. Proin vitae mauris vitae odio semper gravida fringilla ac ipsum. Phasellus massa ligula, feugiat quis cursus at, dapibus at felis.
+
+        Vivamus venenatis luctus magna, et accumsan mi pellentesque in. Etiam vitae blandit magna. Vestibulum ac laoreet risus. Cras bibendum eros vitae urna fringilla, vel volutpat dui pharetra. Ut sit amet odio sit amet purus accumsan imperdiet. In eleifend dictum arcu, in tristique nulla molestie non. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+        Nunc vestibulum scelerisque orci, vel vulputate nunc vulputate auctor. Phasellus nec ante sit amet augue fringilla pharetra et non est. Fusce congue orci id sem eleifend vestibulum. Integer bibendum nisl sit amet congue interdum. Duis bibendum facilisis tempor. Sed dapibus arcu ac tincidunt pellentesque. Nunc placerat, orci eget tempus ultrices, arcu risus aliquet elit, fermentum imperdiet magna arcu a metus. Ut vulputate erat nec libero egestas, fringilla hendrerit nisl ullamcorper. Curabitur vulputate sollicitudin lacus ut dapibus. Suspendisse potenti. Morbi accumsan egestas tortor, id pharetra enim dictum vitae. Pellentesque dolor ante, vehicula sit amet elit sit amet, commodo pharetra justo.
+
+        Aliquam erat volutpat. Ut congue, turpis vel congue volutpat, nisl tellus congue arcu, eu consectetur lorem nisl quis nisl. Phasellus at convallis nisl. Vestibulum consequat, dolor vitae auctor eleifend, eros libero volutpat orci, ut tincidunt nisl odio ac mauris. Donec vitae augue quis dolor imperdiet rhoncus ut quis arcu. Sed tincidunt, erat vel porta tristique, dolor risus posuere dui, sed semper quam orci in mi. Sed ac hendrerit sem. Morbi efficitur metus et urna aliquet, vitae porttitor ligula accumsan. Sed volutpat eu nulla vel semper. Integer porttitor congue risus, ut pulvinar augue malesuada vitae.
+
+        Sed nec magna pretium, tincidunt lorem non, pellentesque turpis. Nunc ut nunc et ex ultrices bibendum. Phasellus luctus, sapien ac rutrum lobortis, purus augue tincidunt magna, sed luctus ipsum nibh et leo. Praesent scelerisque ut nulla ut viverra. Ut est mauris, dignissim a ornare vitae, sagittis eu ipsum. Donec rhoncus ullamcorper posuere. Sed accumsan enim tellus, ac imperdiet eros consectetur ac. Nulla ut tempus quam. In justo lectus, facilisis id leo sed, facilisis imperdiet nisi.
+
+        Integer fringilla diam in posuere pharetra. Nam non eleifend lectus, id faucibus lectus. Phasellus id vehicula augue, nec auctor lacus. Integer id egestas nibh, at euismod enim. Nulla nec nulla iaculis, posuere leo in, consequat dolor. Suspendisse porttitor massa nunc, at congue velit varius eu. Nunc blandit, mi quis tempor dapibus, lectus eros pretium purus, eget efficitur nulla massa vel eros. Integer quis arcu suscipit, finibus ipsum sit amet, interdum eros. Suspendisse potenti. Donec vestibulum, ex sollicitudin imperdiet fringilla, diam ex sollicitudin nunc, quis lobortis lorem nunc quis diam. Vestibulum ac ultricies urna, non pretium lorem. Suspendisse eu ultrices nunc. Cras eu feugiat orci, eget congue dui. Suspendisse id consectetur augue, non volutpat mi.
+
+        Cras dapibus nisi et vulputate consectetur. Aenean posuere metus sit amet facilisis aliquam. Sed interdum vestibulum vulputate. Nullam cursus eget quam et bibendum. Nunc condimentum interdum magna, a eleifend nunc varius ac. In dapibus eleifend ipsum. Proin semper tempus pulvinar. Aliquam ut nisi blandit, suscipit nibh vitae, tristique nulla. Vivamus pellentesque est a mattis euismod. Vivamus pretium euismod lorem, sit amet tincidunt felis feugiat et.
+
+        Pellentesque placerat eros quis quam auctor lobortis. Maecenas vel volutpat erat, vel iaculis metus. Aenean dapibus ipsum eget consequat ullamcorper. Curabitur eget odio lorem. Suspendisse et eros eget erat molestie vulputate. Aliquam finibus feugiat massa, consectetur consequat risus rhoncus efficitur. Mauris vel porta tortor. Phasellus varius est metus, sit amet lobortis lorem varius vel. Vivamus at mi faucibus, rhoncus mauris eget, tincidunt justo. Cras vitae imperdiet purus, quis dictum ligula. Mauris consectetur semper lacus at egestas.
+
+        Pellentesque in metus id felis luctus pretium. Vivamus bibendum pulvinar lacus a pellentesque. Ut et convallis augue, sit amet luctus ligula. Aenean tincidunt et felis id vulputate. Fusce porttitor ac nulla commodo imperdiet. Nullam purus ante, varius eu est a, euismod commodo sapien. In scelerisque justo justo, at condimentum mi consequat vel. Aliquam consectetur nunc a nisi lacinia mollis. Aenean in nunc laoreet, venenatis ipsum a, dapibus est. Donec vulputate nibh ac eros gravida sodales. Phasellus fermentum ac urna at lacinia. Pellentesque laoreet ipsum vel risus fermentum ultricies. Sed ultrices, augue quis bibendum pellentesque, tellus nunc dignissim ex, in sagittis dui metus eu metus. Ut porta lorem eu augue scelerisque fermentum. Fusce vitae porttitor lacus.
+
+        Vivamus in pretium odio. Nunc consectetur urna vitae sem accumsan posuere. Nunc non enim ac diam cursus malesuada fringilla sed arcu. Curabitur vel libero non ipsum posuere posuere non mollis dui. Integer at ante pretium, eleifend ante in, iaculis lacus. Suspendisse potenti. Quisque dapibus velit euismod maximus ullamcorper. Praesent scelerisque nulla in urna euismod, vel lobortis enim vehicula. Nullam sed augue nec dolor placerat pellentesque a vel sem. Praesent viverra tortor non justo pretium pellentesque. Pellentesque vitae dui ac libero tempor tincidunt.
+
+        Mauris iaculis pharetra ullamcorper. Mauris metus nisi, aliquam eu odio at, rutrum tempus arcu. Nunc ut neque ipsum. Phasellus eu aliquam mauris. Sed vestibulum nulla lorem, eget porttitor augue commodo in. Curabitur venenatis a ante eget scelerisque. Integer ipsum justo, sodales a sem non, lobortis viverra tortor. Aliquam aliquet ipsum eget scelerisque dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum eget enim at dui gravida ultricies ut suscipit massa. Fusce porttitor ante quis pharetra dignissim. Aenean imperdiet sapien ut urna iaculis auctor. Curabitur ut tellus mauris. Proin efficitur ipsum non quam porttitor, sit amet sollicitudin tellus scelerisque. Vivamus mattis leo a egestas fermentum. Aenean semper pellentesque egestas.
+
+        Maecenas diam ante, pulvinar egestas sagittis placerat, dignissim a erat. Vestibulum pulvinar eu metus vitae ullamcorper. Quisque lacinia accumsan tincidunt. Nunc ac vestibulum mauris. Curabitur egestas ipsum ac tortor posuere eleifend. Phasellus et dictum urna, id commodo velit. Etiam et urna dui. Etiam vitae sapien eu velit iaculis elementum quis id eros. Maecenas imperdiet vestibulum vulputate. Vivamus velit ligula, pretium id viverra nec, volutpat non nunc. Praesent id pellentesque eros. Quisque a velit ex. Nulla consequat lacus ut finibus ornare. Donec fermentum sem vitae tortor mollis, ac posuere lorem pulvinar.
+
+        Duis vestibulum massa dolor, vitae porttitor mi auctor vel. Vivamus et tortor tortor. Pellentesque vel ex non erat mollis finibus quis a massa. In sed viverra augue, sed malesuada tortor. Aenean feugiat posuere dui, sed sagittis risus tempor sed. Proin eget bibendum dolor. Curabitur diam eros, condimentum eu scelerisque eget, porta nec est. Nulla facilisi. Aenean nunc urna, ullamcorper rutrum eleifend eget, ullamcorper quis magna. Cras vel diam augue. Proin rhoncus cursus volutpat.
+
+        Donec velit leo, ullamcorper eget accumsan et, commodo at neque. Ut ornare a purus ut mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc suscipit eros a augue hendrerit, quis blandit ipsum sagittis. Nullam velit erat, ultricies non nisl eget, placerat tincidunt justo. Nam eu diam vulputate, pretium nunc et, lacinia orci. Aliquam dictum tristique imperdiet. Nulla convallis dolor urna, vel varius urna sodales sit amet. In accumsan fermentum diam. Donec pharetra eros nec urna vehicula interdum.
+
+        Phasellus volutpat ut libero non ultricies. Ut nulla nisi, ullamcorper id quam ac, ornare viverra sapien. Aenean sit amet eros a nunc efficitur dignissim sit amet at justo. Donec bibendum, augue finibus tincidunt consequat, lorem dolor ornare ante, sit amet gravida metus mauris vitae lorem. Fusce neque lectus, luctus eu dolor nec, interdum malesuada ante. Vivamus venenatis leo ac tellus vestibulum lobortis. Etiam posuere, dui ut commodo finibus, ante metus pellentesque purus, sit amet facilisis elit sem in enim. Phasellus nibh lorem, venenatis non blandit porttitor, pretium ac felis. Sed dictum blandit eleifend. Aliquam elementum odio sed tortor varius maximus.
+
+        Morbi ut ultrices tellus. Morbi sodales hendrerit velit in fermentum. Donec ac fermentum metus, ac convallis sem. Phasellus in sodales quam, id luctus odio. Nulla facilisi. Etiam non luctus ipsum, at feugiat tortor. Pellentesque a pellentesque metus, id pharetra massa. Vestibulum fermentum facilisis lorem, quis fringilla ligula venenatis eget. Integer vulputate felis nec tortor congue, in rhoncus libero ultrices. Sed et neque non tellus sollicitudin molestie. Sed tincidunt sagittis odio id tempus. Etiam vitae nulla sollicitudin libero semper porttitor.
+
+        Nam tristique non erat eget dignissim. Aliquam sollicitudin, odio ut vestibulum auctor, est nulla elementum nisi, ac efficitur lacus neque a massa. Aenean vel tristique orci, non condimentum eros. Nulla aliquet tellus eget lacus lacinia, quis maximus turpis hendrerit. Duis vulputate, mi in porttitor gravida, urna odio gravida tellus, quis rutrum risus eros vitae lectus. Cras leo mi, sagittis vitae purus quis, aliquam molestie massa. Pellentesque hendrerit cursus fringilla.
+
+        Donec ultricies vulputate facilisis. Pellentesque sollicitudin tortor metus, in consequat arcu egestas eget. Maecenas et facilisis tortor. Aliquam erat volutpat. Duis tristique fermentum ligula gravida porttitor. Proin volutpat ornare ligula, sed iaculis leo venenatis at. Maecenas malesuada, felis nec varius rhoncus, augue felis semper eros, a tempus diam est eget lectus. In id odio at ex ornare fermentum. Donec condimentum, nisi ac malesuada fermentum, eros enim tristique tellus, eu gravida tortor justo at leo. In vitae elit ut turpis laoreet posuere eu id orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus at semper lacus. Sed a nunc viverra, pulvinar lectus non, eleifend nunc.
+
+        Nunc fermentum ipsum vitae diam vehicula, id efficitur justo gravida. Curabitur vestibulum condimentum pretium. Proin mauris dolor, euismod eget metus quis, congue porta magna. Pellentesque ultricies magna ac massa pulvinar, eget fermentum lacus mollis. Duis pretium eleifend quam sit amet iaculis. Nam vulputate efficitur mauris et ullamcorper. Nunc molestie nisi mauris, eget auctor nulla mattis laoreet. Nullam velit mi, tristique quis magna sed, lacinia volutpat turpis. In at egestas lacus. Morbi varius nunc vestibulum urna dapibus blandit. Quisque vitae lectus sollicitudin, euismod est quis, laoreet nibh. Donec et mattis ipsum. Ut quis tortor in purus convallis suscipit.
+
+        Etiam et felis lobortis, fringilla magna sed, interdum neque. Sed eu lorem nisl. Duis efficitur libero id mauris dictum, in pharetra arcu hendrerit. Integer porttitor ac urna ac venenatis. Maecenas blandit mollis nunc, ac aliquam ipsum volutpat quis. Nunc tempor tincidunt ipsum sed cursus. Nam pretium lacinia massa, at varius lorem. Sed ultrices lacus erat, eget vehicula purus tristique ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacus ligula, congue et eros pellentesque, dapibus bibendum nisl. Curabitur molestie tellus et arcu dictum, sit amet aliquet turpis pretium. In hac habitasse platea dictumst. Fusce sed mauris quis sem auctor rhoncus et vel erat. Integer tempor sagittis nisl, non condimentum lorem bibendum nec.
+
+        Nulla semper elit metus, ac consequat est tempus sit amet. Suspendisse dapibus lacus et volutpat tempor. Vivamus nisi leo, porttitor et turpis sit amet, congue iaculis tortor. Fusce euismod placerat sem quis consequat. Morbi ac enim justo. Fusce vehicula placerat urna a interdum. Cras porttitor, nulla et tempor scelerisque, sem velit luctus erat, non dapibus erat felis non urna. Morbi gravida sem libero, ac consequat leo varius ac. Integer luctus molestie bibendum. Vivamus at felis tellus. Nunc luctus pharetra augue, id convallis tellus ornare at. Aliquam erat volutpat. Sed congue lacinia ligula et lobortis. Sed sodales ex neque, id porta arcu posuere ac. Cras volutpat dui lacus, eget malesuada ante lacinia sit amet. Donec auctor arcu et urna molestie, at suscipit orci convallis.
+      </p>
+    </fieldset>
+  </div>
+
+  <div class="col-3">
+
+    <fieldset class="col-12 border border-secondary px-2 py-3 mx-0">
+      <legend  class="float-none w-auto ">
+        Deadlines
+      </legend>
+
+      <div class="row text-primary mx-1">
+        <span class="fs-sm-5 fw-md-bold fw-lg-bold fw-xl-bold">Sunday, 16 January 2022, 11:59 PM</span>
+        <br>
+        <a href="#" target="_blank">
+          <div class="row my-1 ">
+            <div class="col-md-2 сol-sm-2 px-0 py-2 mx-0 d-none d-xxl-block">
+              <span class="d-flex justify-content-center my-3"><img src="images/study_assn_icon.ico" style="height: 50px"></span>
+            </div>
+
+            <div class="col-md-10 сol-sm-10">
+              <h5 class="my-auto align-middle">Assignment #2</h5>
+              <h6 class="my-auto align-middle fw-normal">WEB Technologies 1 (Front End) <br> Yegemberdiyeva Gulzhan</h6>
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <hr>
+
+      <div class="row text-primary mx-1">
+        <span>Monday, 17 January 2022, 11:59 PM</span>
+        <br>
+        <a href="#" target="_blank">
+          <div class="row my-0 ">
+            <div class="col-md-2 сol-sm-2 px-0 py-2 mx-0 d-none d-xxl-block">
+              <span class="d-flex justify-content-center my-3"><img src="images/study_assn_icon.ico" style="height: 50px"></span>
+            </div>
+
+            <div class="col-md-10 сol-sm-10">
+              <h5 class="my-auto align-middle ">Media Presentation #1</h5>
+              <h6 class="my-auto align-middle fw-normal">Modern History of Kazakhstan <br> Mamytova Saule</h6>
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+
+      <hr>
+
+      <div class="row text-primary mx-1">
+        <span>Thursday, 20 January 2022, 11:59 PM</span>
+        <br>
+        <a href="#" target="_blank">
+          <div class="row my-1 ">
+            <div class="col-md-2 сol-sm-2 px-0 py-2 mx-0 d-none d-xxl-block">
+              <span class="d-flex justify-content-center my-3"><img src="images/study_assn_icon.ico" style="height: 50px"></span>
+            </div>
+
+            <div class="col-md-10 сol-sm-10">
+              <h5 class="my-auto align-middle ">Essay for Seminar 3</h5>
+              <h6 class="my-auto align-middle fw-normal">Modern History of Kazakhstan <br> Mamytova Saule</h6>
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <hr>
+
+      <div class="row text-primary mx-1">
+        <span>Thursday, 20 January 2022, 11:59 PM</span>
+        <br>
+        <a href="#" target="_blank">
+          <div class="row my-1 ">
+            <div class="col-md-2 сol-sm-2 px-0 py-2 mx-0 d-none d-xxl-block">
+              <span class="d-flex justify-content-center my-3"><img src="images/study_assn_icon.ico" style="height: 50px"></span>
+            </div>
+
+            <div class="col-md-10 сol-sm-10">
+              <h5 class="my-auto align-middle ">Essay for Seminar 4</h5>
+              <h6 class="my-auto align-middle fw-normal">Modern History of Kazakhstan <br> Mamytova Saule</h6>
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+      <hr>
+
+      <div class="row text-primary mx-1">
+        <span>Friday, 21 January, 11:59 PM</span>
+        <br>
+        <a href="#" target="_blank">
+          <div class="row my-1 ">
+            <div class="col-md-2 сol-sm-2 px-0 py-2 mx-0 d-none d-xxl-block">
+              <span class="d-flex justify-content-center my-3"><img src="images/study_assn_icon.ico" style="height: 50px"></span>
+            </div>
+
+            <div class="col-md-10 сol-sm-10">
+              <h5 class="my-auto align-middle ">Homework #2</h5>
+              <h6 class="my-auto align-middle fw-normal">Discrete Mathematics <br> Zhalgas Aidana</h6>
+            </div>
+
+          </div>
+
+        </a>
+      </div>
+
+
+    </fieldset>
+
+    <fieldset id="linksDiv" class="col-12 my-3 py-3 border border-secondary">
+      <legend class="legendTexts">
+        Student's Hot Links
+      </legend>
+
+      <div class=" px-2">
+        <a target="_blank" href="https://moodle.astanait.edu.kz/pluginfile.php/24480/block_html/content/1%20%D0%BA%D1%83%D1%80%D1%81%20%D0%B0%D0%BD%D0%B3%D0%BB.pdf">
+          Academic Calendar 1 Course
+        </a>
+        <br>
+        <a target="_blank" href="https://moodle.astanait.edu.kz/pluginfile.php/24480/block_html/content/2%20%D0%BA%D1%83%D1%80%D1%81%20%D0%B0%D0%BD%D0%B3%D0%BB.pdf">
+          Academic Calendar 2 Course
+        </a>
+        <br>
+        <a target="_blank" href="https://moodle.astanait.edu.kz/pluginfile.php/24480/block_html/content/3%20%D0%BA%D1%83%D1%80%D1%81%20%D0%B0%D0%BD%D0%B3%D0%BB.pdf">
+          Academic Calendar 3 Course
+        </a>
+        <br>
+        <a target="_blank" href="https://moodle.astanait.edu.kz/pluginfile.php/24480/block_html/content/3%20%D0%BA%D1%83%D1%80%D1%81%20%D0%B0%D0%BD%D0%B3%D0%BB.pdf">
+          Academic Calendar Master's Degree 1 course
+        </a>
+        <br>
+        <a target="_blank" href="https://forms.office.com/Pages/ResponsePage.aspx?id=8xWPFeCDBkmCTGm9xQ2dYdQgqgpRMVJCgGvX6dIPF2JUNkVGTlFEUVVaSlE4TUIzNDVPUzZaQjlaTC4u">
+          Application to the Dean's office
+        </a>
+        <br>
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScvYs58Nal9GSZHP2aok4thsSI_7se4Is64HhU98SI0Nl5wbw/viewform">
+          Enrollment verification letter request
+        </a>
+        <br>
+      </div>
+
+      <hr>
+
+      <div class=" px-2">
+        <span><a href="mailto:alexei.peresipkin@astanait.edu.kz">Аlexey Peresipkin</a> <br> Military department <br> Room – C1.3.336 </span>
+        <br>
+        <br>
+        <span><a href="mailto:arman.kenzhebekov@astanait.edu.kz">Arman Kenzhebekov</a> <br> Department of the students' affairs <br>Room – C1.2.245 </span>
+        <br>
+        <br>
+        <span><a href="mailto:aliya.koitanova@astanait.edu.kz">Aliya Koitanova</a>  <br>Head of the Register's office <br> Room – C1.1.273 </span>
+        <br>
+        <br>
+        <span><a href="mailto:moldir.berzhanova@astanait.edu.kz">Moldir Barzhanova</a> <br> Head of the Students Department<br> Room – C1.1.270  </span>
+        <br>
+      </div>
+
+      <hr>
+
+      <div class="px-2">
+        <span><a href="mailto:d.yedilkhan@astanait.edu.kz">Didar Yedilkhan</a> <br> Coordinator of ICT program <br> Room – C1.1.266 </span>
+        <br>
+        <br>
+        <span><a href="mailto:zhibek.tleshova@astanait.edu.kz">Zhibek Tleshova</a> <br> Coordinator of English program <br>Room – C1.1.262 </span>
+        <br>
+        <br>
+        <span><a href="mailto:zhibek.tleshova@astanait.edu.kz">Yerzhan Baissalov</a>  <br> Coordinator of Math program<br> Room – C1.1.321  </span>
+        <br>
+        <br>
+        <span><a href="mailto:zhibek.tleshova@astanait.edu.kz">Nurbek Shayakhmetov</a> <br> Coordinator of GED program<br>  Room – C1.1.263 </span>
+        <br>
+      </div>
+
+    </fieldset>
+
+  </div>
+
+</fieldset>
+
+
+<!--FOOTER ILI PODVAL-->
+<div class="bg-dark text-center text-light text-lg-start">
+  <div class="container p-4">
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0 text-center">
+        <h5 class="text-uppercase">moodle actions</h5>
+
+        <ul class="list-unstyled mb-0 text-light">
+          <li>
+            <a href="mk_main_regged.html" target="_blank" class="footerText">
+              Main Page
+            </a>
+          </li>
+          <li>
+            <a href="mk_grades.html" target="_blank" class="footerText">
+              Courses
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" class="footerText">
+              Profile
+            </a>
+          </li>
+          <li>
+            <a href="https://astanait.edu.kz/contact/" target="_blank" class="footerText">
+              Contacts
+            </a>                                                             
+          </li>                                                              
+          <li>                                                               
+            <a href="moodlekiller_settings.html" target="_blank" class="footerText">
+              Settings                                                       
+            </a>                                                             
+          </li>                                                              
+        </ul>
+      </div>
+
+
+      <div class="col-lg-6 col-md-6 mb-4 mb-md-0 text-center">
+        <h5 class="text-uppercase">social media</h5>
+
+        <ul class="list-unstyled mb-0 text-light">
+          <li>
+            <a href="https://astanait.edu.kz/en/aitu-2/" target="_blank" class="footerText">
+              Official Site
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/astana_it_university/" target="_blank" class="footerText">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCRUN152kvKPdLiYvcpOyFkQ" target="_blank" class="footerText">
+              Youtube
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/ait2u" target="_blank" class="footerText">
+              Telegram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/astanaituniversity" target="_blank" class="footerText">
+              Facebook
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center p-3 disabled text-muted" style="background-color: rgba(0, 0, 0, 0.2);">
+    © January 2021. The authors are very tired after many deadlines. It's about Zaur nad Umar.
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
