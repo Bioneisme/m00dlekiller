@@ -125,39 +125,3 @@ function sendLoadingButton(){
     setTimeout(() => {location.reload()}, 1000);
 }
 
-function funcError(){
-    alert("This function is not working yet :(");
-}
-
-function getTimeFirst(date) {
-    const tod = new Date(date);
-    const time = tod.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-    const month = tod.toLocaleString('en-us', { month: 'long' });
-    const week = tod.toLocaleString('en-us', { weekday: 'long' });
-
-    return week + ", " + tod.getDate() + " " + month + " " + tod.getFullYear() + ", " + time;
-}
-
-function getTimeLast() {
-    const tod = new Date();
-    const time = tod.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
-    const month = tod.toLocaleString('en-us', { month: 'long' });
-    const week = tod.toLocaleString('en-us', { weekday: 'long' });
-
-    return week + ", " + tod.getDate() + " " + month + " " + tod.getFullYear() + ", " + time;
-}
-
-function getNumberOfDays() {
-    const start = new Date("12/22/2021");
-    const now = new Date();
-    const oneDay = 1000 * 60 * 60 * 24;
-    const oneHour = oneDay / 24;
-
-    const diffInTime = now.getTime() - start.getTime();
-    const diffInDays = Math.round(diffInTime / oneDay);
-    const diffInHours = Math.round((diffInTime / oneHour) % 24);
-    console.log(diffInDays);
-
-    return "(" + diffInDays + " days, " + diffInHours + " hours)";
-}
-
